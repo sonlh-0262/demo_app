@@ -1,0 +1,6 @@
+<tr id="user-tr-<%= user.id %>">
+  <td><%= user.name %></td>
+  <td><%= link_to 'Show', user %></td>
+  <td><%= link_to 'Edit', edit_user_path(user) %></td>
+  <td><%= link_to 'Destroy', user, method: :delete, remote: true, data: { confirm: 'Are you sure?' } %></td>
+</tr>
